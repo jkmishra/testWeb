@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="wwe/wwe-short-content.js"></script>
+<!-- <script src="wwe/wwe-collection.js"></script> -->
+<script src="wwe/wwe-common.js"></script>
+<!-- <script src="wwe/wwe-home.js"></script> -->
+ <script src="wwe/inputShort.js"></script>
+<!--  <script src="wwe/wwe-show.js"></script> -->
+
+
+
+<script type="text/javascript">
+	function transformJS(inputWWE, params) {
+		// Calling processInputData for processing  input JSON
+		output = transform(inputWWE, JSON.stringify({"platform":"atv"}));
+		// returning output JSON
+		var testJSON = JSON.stringify(output);
+		//consol.log(testJSON);
+		return output;
+	}
+</script>
+</head>
+
+<body>
+	<button onclick="transformJS()">Click me</button>
+</body>
+
+</html>

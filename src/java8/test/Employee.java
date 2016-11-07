@@ -2,8 +2,6 @@ package java8.test;
 
 import java.util.Objects;
 
-import com.sun.glass.ui.CommonDialogs.Type;
-
 public class Employee implements Comparable<Employee> {
 	private int id;
 	private String firstName;
@@ -100,8 +98,10 @@ public class Employee implements Comparable<Employee> {
 		return String.format("%s(%s,%d, %f)", firstName, city, age,salary);
 	}
 	@Override
-	public int compareTo(Employee emp) {
+	public int compareTo(Employee o) {
 		// TODO Auto-generated method stub
-		return this.firstName.compareTo(emp.getFirstName());
+		return 0;
 	}
+
+	
 }

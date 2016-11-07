@@ -10,8 +10,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+import org.apache.log4j.Logger;
+
+
+
 public class WaitingFuturesRunner<T, S> {
-    private transient static final Log logger = LogFactory.getLog(WaitingFuturesRunner.class);
+	
+    private transient static final Logger logger =Logger.getLogger(WaitingFuturesRunner.class);    	
     private final Collection<Task<T, S>> tasks;
     private final long timeOut;
     private final TimeUnit timeUnit;
